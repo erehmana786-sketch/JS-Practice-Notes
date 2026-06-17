@@ -18,3 +18,7 @@ button.style.padding="10px 20px";
 // innerText vs innerHTML 
 paragraph.innerText = "Hey there! <b>Esha here</b>" // Hey there! <b>Esha here</b>
 paragraph.innerHTML = "Hey there! <b>Esha here</b>" // Hey there! Esha here (Esha here bold)
+
+
+// create list via innerHTML
+paragraph.innerHTML="<ul><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>"
