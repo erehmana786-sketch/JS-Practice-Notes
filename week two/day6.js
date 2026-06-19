@@ -260,4 +260,12 @@
 // calculator.num1=23
 // console.log(calculator.add());
 
-
+// ********* Function with object *********
+let user ={
+    name: "Esha",
+    cgpa: 3.27,
+}
+function userinformation(objects) {
+    return `My name is ${objects.name} and my marks is ${objects.cgpa}`
+}
+console.log(userinformation(user));
