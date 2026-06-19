@@ -269,3 +269,10 @@ function userinformation(objects) {
     return `My name is ${objects.name} and my marks is ${objects.cgpa}`
 }
 console.log(userinformation(user));
+
+// ********* Function with array *********
+let myArray = [200,344,5667,3224]
+function arrayNumbers(values) {
+    return values[2]
+}
+console.log(arrayNumbers(myArray));
