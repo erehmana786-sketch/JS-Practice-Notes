@@ -260,19 +260,29 @@
 // calculator.num1=23
 // console.log(calculator.add());
 
-// ********* Function with object *********
-let user ={
-    name: "Esha",
-    cgpa: 3.27,
-}
-function userinformation(objects) {
-    return `My name is ${objects.name} and my marks is ${objects.cgpa}`
-}
-console.log(userinformation(user));
+// // ********* Function with object *********
+// let user ={
+//     name: "Esha",
+//     cgpa: 3.27,
+// }
+// function userinformation(objects) {
+//     return `My name is ${objects.name} and my marks is ${objects.cgpa}`
+// }
+// console.log(userinformation(user));
 
-// ********* Function with array *********
-let myArray = [200,344,5667,3224]
-function arrayNumbers(values) {
-    return values[2]
-}
-console.log(arrayNumbers(myArray));
+// // ********* Function with array *********
+// let myArray = [200,344,5667,3224]
+// function arrayNumbers(values) {
+//     return values[2]
+// }
+// console.log(arrayNumbers(myArray));
+
+// ******** Immediately Invoked Function Expression (IIFE)******** 
+(function code(name) {
+    console.log(`Its ${name}`);
+}) ("Esha");  // A safety semicolon must be used before writing another IIFE. 
+
+( (name)=> {
+    console.log(`Its ${name}`);
+    
+})("Fiza")
