@@ -280,7 +280,7 @@
 // ******** Immediately Invoked Function Expression (IIFE)******** 
 (function code(name) {
     console.log(`Its ${name}`);
-}) ("Esha");  // A safety semicolon must be used before writing another IIFE. 
+}) ("Esha");  // A semicolon must be used before writing another IIFE. 
 
 ( (name)=> {
     console.log(`Its ${name}`);
