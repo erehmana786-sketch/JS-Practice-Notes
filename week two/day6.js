@@ -290,4 +290,4 @@
 // *** falsy values in control flow***
 // false, 0, -0, BigInt 0n, "", null, undefined, NaN 
 // *** truthy values in control flow***
-// "0", "false"," ", [], {}, function () {} 
+// true, "0", "false"," ", [], {}, function () {}
