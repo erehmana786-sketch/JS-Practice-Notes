@@ -292,21 +292,27 @@
 // *** truthy values in control flow***
 // true, "0", "false"," ", [], {}, function () {}
 
-// Control flow in array 
-let useremail = []
-if (useremail.length===0) {
-    console.log("Array is empty")
-}
+// // Control flow in array 
+// let useremail = []
+// if (useremail.length===0) {
+//     console.log("Array is empty")
+// }
 // Control flow in object
-const emptyObj = {}
-if (Object.keys(emptyObj).length===0) {
-    console.log("Object is empty");
+// const emptyObj = {}
+// if (Object.keys(emptyObj).length===0) {
+//     console.log("Object is empty");
     
-}
+// }
 
-// in console 
-false == 0 // true 
-false == "" // true 
-0==""  // true 
+// // in console 
+// false == 0 // true 
+// false == "" // true 
+// 0==""  // true 
 
-// Nullish coalescing operator (??)
+// Nullish coalescing operator (??) : null undefined 
+let val1;
+val1 = 3??5
+// val1 = null ?? 5
+console.log(val1);
+
+
