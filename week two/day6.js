@@ -278,17 +278,28 @@
 // console.log(arrayNumbers(myArray));
 
 // ******** Immediately Invoked Function Expression (IIFE)******** 
-(function code(name) {
-    console.log(`Its ${name}`);
-}) ("Esha");  // A semicolon must be used before writing another IIFE. 
+// (function code(name) {
+//     console.log(`Its ${name}`);
+// }) ("Esha");  // A semicolon must be used before writing another IIFE. 
 
-( (name)=> {
-    console.log(`Its ${name}`);
+// ( (name)=> {
+//     console.log(`Its ${name}`);
     
-})("Fiza")
+// })("Fiza")
 
 // *** falsy values in control flow***
 // false, 0, -0, BigInt 0n, "", null, undefined, NaN 
 // *** truthy values in control flow***
 // true, "0", "false"," ", [], {}, function () {}
 
+// Control flow in array 
+let useremail = []
+if (useremail.length===0) {
+    console.log("Array is empty")
+}
+// Control flow in object
+const emptyObj = {}
+if (Object.keys(emptyObj).length===0) {
+    console.log("Object is empty");
+    
+}
