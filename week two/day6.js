@@ -309,18 +309,16 @@
 // false == "" // true 
 // 0==""  // true 
 
-// Nullish coalescing operator (??) : null undefined 
-let val1;
-val1 = 3??5
-// val1 = null ?? 5
-console.log(val1);
+// // Nullish coalescing operator (??) : null undefined 
+// let val1;
+// val1 = 3??5
+// // val1 = null ?? 5
+// console.log(val1);
 
 let score = 0;
-
 // OR (||) operator treats 0 as a falsy value, so it falls back to 10
 let result1 = score || 10; // Result: 10
 console.log(result1);
-
 // Nullish Coalescing (??) operator only checks for null/undefined. 
 // Since 0 is a valid number, it keeps 0.
 let result2 = score ?? 10; // Result: 0
