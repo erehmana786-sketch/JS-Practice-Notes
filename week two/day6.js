@@ -313,7 +313,9 @@
 let val1;
 val1 = 3??5
 // val1 = null ?? 5
-val1 = undefined ?? 5
+// val1 = undefined ?? 5
+// val1 = undefined ?? 3 ?? 5
+val1 = undefined ?? null ?? 5
 console.log(val1);
 
 // let score = 0;
@@ -324,3 +326,8 @@ console.log(val1);
 // // Since 0 is a valid number, it keeps 0.
 // let result2 = score ?? 10; // Result: 0
 // console.log(result2);
+
+for (let i = 0; i < 10; i++) {
+    console.log(i);
+    
+}
