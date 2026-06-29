@@ -303,3 +303,8 @@ if (Object.keys(emptyObj).length===0) {
     console.log("Object is empty");
     
 }
+
+// in console 
+false == 0 // true 
+false == "" // true 
+0==""  // true 
