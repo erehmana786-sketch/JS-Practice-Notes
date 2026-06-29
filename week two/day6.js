@@ -308,3 +308,5 @@ if (Object.keys(emptyObj).length===0) {
 false == 0 // true 
 false == "" // true 
 0==""  // true 
+
+// Nullish coalescing operator (??)
