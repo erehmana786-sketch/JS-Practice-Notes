@@ -310,13 +310,13 @@
 // 0==""  // true 
 
 // Nullish coalescing operator (??) : null undefined 
-let val1;
-val1 = 3??5
-// val1 = null ?? 5
-// val1 = undefined ?? 5
-// val1 = undefined ?? 3 ?? 5
-val1 = undefined ?? null ?? 5
-console.log(val1);
+// let val1;
+// val1 = 3??5
+// // val1 = null ?? 5
+// // val1 = undefined ?? 5
+// // val1 = undefined ?? 3 ?? 5
+// val1 = undefined ?? null ?? 5
+// console.log(val1);
 
 // let score = 0;
 // // OR (||) operator treats 0 as a falsy value, so it falls back to 10
@@ -330,3 +330,12 @@ console.log(val1);
 // for (let i = 0; i < 10; i++) {
 //     console.log(i);   
 // }
+
+let map = new Map()
+map.set("Pak", "Pakistan")
+map.set("UK", "united kingdom")
+map.set("USA", "United states of america")
+// console.log(map);
+for (const [key, value] of map) {
+      console.log(key, ':-', value);     
+}
