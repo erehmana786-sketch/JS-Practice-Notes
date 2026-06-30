@@ -330,8 +330,3 @@ console.log(val1);
 // for (let i = 0; i < 10; i++) {
 //     console.log(i);   
 // }
-
-let arr = [3,4,5,6]
-for (let i of arr) {
-      console.log(i);
-}
