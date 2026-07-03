@@ -331,11 +331,21 @@
 //     console.log(i);   
 // }
 
-let map = new Map()
-map.set("Pak", "Pakistan")
-map.set("UK", "united kingdom")
-map.set("USA", "United states of america")
-// console.log(map);
-for (const [key, value] of map) {
-      console.log(key, ':-', value);     
+// // for of on map()
+// let map = new Map()
+// map.set("Pak", "Pakistan")
+// map.set("UK", "united kingdom")
+// map.set("USA", "United states of america")
+// // console.log(map);
+// for (const [key, value] of map) {
+//       console.log(key, ':-', value);     
+// }
+
+// for of on object 
+let myObj = {
+      name:"Esha",
+      "D/O":"Rehman Ali"
+}
+for (const [key, value] of myObj) {
+      console.log(key, ':-', value);    //Error because forof loop didn't work object   
 }
