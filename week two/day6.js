@@ -331,6 +331,7 @@
 //     console.log(i);   
 // }
 
+/*
 let map = new Map()
 map.set("Pak", "Pakistan")
 map.set("UK", "united kingdom")
@@ -339,3 +340,4 @@ map.set("USA", "United states of america")
 for (const [key, value] of map) {
       console.log(key, ':-', value);     
 }
+*/
