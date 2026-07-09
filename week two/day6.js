@@ -366,3 +366,5 @@ for (const key in arr) {
      console.log(arr[key]); // for values
           
 }
+
+//****** for in loop is not for map () because this is not iterable 
