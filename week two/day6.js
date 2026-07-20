@@ -370,7 +370,12 @@
 //****** for in loop is not for map () because this is not iterable 
 
 // Higher order function foreach 
+// let array = ["js","css","html"]
+// array.forEach( (value)=> {
+//       console.log(value);   
+// })
+
 let array = ["js","css","html"]
-array.forEach( (value)=> {
-      console.log(value);   
+array.forEach( (value, index, array)=> {
+      console.log(value,index, array);   
 })
