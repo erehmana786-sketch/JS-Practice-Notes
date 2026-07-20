@@ -350,21 +350,27 @@
 //        console.log(key, ':-', value);    //Error because forof loop didn't work object   
 // }
 
-// for in loop to make objects iterable 
-let obj = {
-      js: "JavaScript",
-      cpp: "C++",
-}
-for (const i in obj) {
-      console.log(`${i} is shortcut for ${obj[i]}`);
-}
+// // for in loop to make objects iterable 
+// let obj = {
+//       js: "JavaScript",
+//       cpp: "C++",
+// }
+// for (const i in obj) {
+//       console.log(`${i} is shortcut for ${obj[i]}`);
+// }
 
-// for in for array 
-let arr = ["js", "cpp"]
-for (const key in arr) {
-     console.log(key); // for printing index
-     console.log(arr[key]); // for values
+// // for in for array 
+// let arr = ["js", "cpp"]
+// for (const key in arr) {
+//      console.log(key); // for printing index
+//      console.log(arr[key]); // for values
           
-}
+// }
 
 //****** for in loop is not for map () because this is not iterable 
+
+// Higher order function foreach 
+let array = ["js","css","html"]
+array.forEach( (value)=> {
+      console.log(value);   
+})
