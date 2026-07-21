@@ -375,7 +375,16 @@
 //       console.log(value);   
 // })
 
-let array = ["js","css","html"]
-array.forEach( (value, index, array)=> {
-      console.log(value,index, array);   
+// let array = ["js","css","html"]
+// array.forEach( (value, index, array)=> {
+//       console.log(value,index, array);   
+// })
+
+
+// ***** Reduce 
+let mynum= [1,2,3]
+let totalnum = mynum.reduce ((accumulator, currentValue)=> {
+      console.log(`acc: ${accumulator} and curr: ${currentValue}`);
+      return accumulator + currentValue
 })
+console.log(totalnum);
