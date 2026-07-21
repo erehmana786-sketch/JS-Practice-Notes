@@ -386,5 +386,5 @@ let mynum= [1,2,3]
 let totalnum = mynum.reduce ((accumulator, currentValue)=> {
       console.log(`acc: ${accumulator} and curr: ${currentValue}`);
       return accumulator + currentValue
-})
+}, 0)
 console.log(totalnum);
