@@ -10,3 +10,5 @@ const parent = document.querySelector('.Parent')
 
 parent.children[1].style.color = "red"
 console.log(parent.firstElementChild);
+console.log(parent.lastElementChild);
+
