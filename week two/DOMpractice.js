@@ -9,6 +9,12 @@ const parent = document.querySelector('.Parent')
 // }
 
 parent.children[1].style.color = "red"
-console.log(parent.firstElementChild);
-console.log(parent.lastElementChild);
+// console.log(parent.firstElementChild);
+// console.log(parent.lastElementChild);
+
+const dayOne=document.querySelector('.day')
+// console.log(dayOne);
+// console.log(dayOne.parentElement);
+// console.log(dayOne.nextElementSibling);
+console.log("Nodes: ", parent.childNodes);
 
