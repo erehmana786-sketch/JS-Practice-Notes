@@ -30,5 +30,13 @@ function addlang(lang){
 }
 addlang("python")
 addlang("react")
+
+// Edit element
+const secondlang = document.querySelector("li:nth-child(2)")
+// secondlang.innerHTML = "mojo"
+ const newli = document.createElement("li")
+ newli.textContent = "mojo"
+ secondlang.replaceWith(newli)
+
 </script>
 </html>
