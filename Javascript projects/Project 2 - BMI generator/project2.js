@@ -16,4 +16,5 @@ form.addEventListener('submit', function (e) {
     //    show the results 
     results.innerHTML = `<span>${BMI}</span>`
     }
+    
 })
