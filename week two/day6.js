@@ -475,3 +475,44 @@ let calculateBill=(price, qty, discount)=>{
  return final
 }
 console.log(calculateBill(500, 2, 10));
+
+let students = [
+  { name: "Sara",   marks: 88 },
+  { name: "Ali",    marks: 42 },
+  { name: "Fatima", marks: 95 },
+  { name: "Ahmed",  marks: 61 },
+  { name: "Zara",   marks: 73 }
+];
+
+let passStudent = students.filter(pass=> pass.marks>=50)
+console.log("Pass Students ", passStudent);
+
+let failStudent= students.filter(pass=>pass.marks<50)
+console.log("Fass Students ", failStudent);
+
+let GetGrade = students.map ((student) => {
+     if (student.marks>=90) {
+      return "A"
+     } else if (student.marks>=80) {
+      return "B"
+}
+      else if (student.marks>=70) {
+      return "C"
+}
+      else if (student.marks>=50) {
+      return "D"
+      }
+      else {
+      return "F"
+      }
+})
+console.log(`Grades: `,GetGrade);
+
+let highestMarks = students.reduce((acc, curr)=> {
+      return curr.marks > acc.marks ? acc : curr
+},0)
+console.log("Highest Marks: ", highestMarks);
+
+
+
+
