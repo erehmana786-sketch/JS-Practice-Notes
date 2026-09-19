@@ -509,10 +509,16 @@ let GetGrade = students.map ((student) => {
 console.log(`Grades: `,GetGrade);
 
 let highestMarks = students.reduce((acc, curr)=> {
-      return curr.marks > acc.marks ? acc : curr
+      return acc.marks > curr.marks ? acc : curr
 },0)
 console.log("Highest Marks: ", highestMarks);
 
+let totalSum = 0
+students.forEach(val=>{
+      totalSum += val.marks
+})
 
-
+let classAverage = totalSum / students.length
+console.log(totalSum);
+console.log(classAverage);
 
