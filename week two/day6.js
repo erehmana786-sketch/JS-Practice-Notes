@@ -540,13 +540,13 @@ console.log("60k+ salary employees",salary60k);
 
 let raiseSalary = employees.map(val=>{
      let newSalary =  val.salary*1.1
-      return {...employees, salary:newSalary}
+      return {...val, salary:newSalary}
 })
 console.log(raiseSalary);
 
 let highestSalary = employees.reduce((acc , curr)=>{
      return acc.salary > curr.salary ? acc : curr
-},0)
+},employees[0])
 console.log(`Highest Salary: `, highestSalary );
 
 let totalSalary = 0
@@ -555,4 +555,24 @@ let itDeptTotalSalary =  itEmployees.forEach(val=>{
 })
 let itDeptAvgSalary = totalSalary / itEmployees.length
 console.log(Math.floor(itDeptAvgSalary));
+
+let getSalaryLevel =(val)=>{
+      if (val>=80000) {
+            return 'Senior'
+      }
+      else if (val>=60000) {
+            return 'Mid'
+      }
+      else{
+            return 'Junior'
+      }
+}
+
+let employeeWithSalaryLevel = employees.map((val)=>{
+      return {
+            ...val, 
+            Level : getSalaryLevel(val.salary)
+      }
+})
+console.log(employeeWithSalaryLevel);
 
