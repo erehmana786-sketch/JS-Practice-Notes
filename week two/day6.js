@@ -468,3 +468,10 @@ console.log(getGrade(82));
 console.log(getGrade(74));
 console.log(getGrade(53));
 console.log(getGrade(35));
+
+let calculateBill=(price, qty, discount)=>{
+ let total = price*qty
+ let final = (total - (total * discount/100))
+ return final
+}
+console.log(calculateBill(500, 2, 10));
