@@ -549,3 +549,10 @@ let highestSalary = employees.reduce((acc , curr)=>{
 },0)
 console.log(`Highest Salary: `, highestSalary );
 
+let totalSalary = 0
+let itDeptTotalSalary =  itEmployees.forEach(val=>{
+ totalSalary+= val.salary
+})
+let itDeptAvgSalary = totalSalary / itEmployees.length
+console.log(Math.floor(itDeptAvgSalary));
+
