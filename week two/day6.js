@@ -382,9 +382,39 @@
 
 
 // ***** Reduce 
-let mynum= [1,2,3]
-let totalnum = mynum.reduce ((accumulator, currentValue)=> {
-      console.log(`acc: ${accumulator} and curr: ${currentValue}`);
-      return accumulator + currentValue
-}, 0)
-console.log(totalnum);
+// let mynum= [1,2,3]
+// let totalnum = mynum.reduce ((accumulator, currentValue)=> {
+//       console.log(`acc: ${accumulator} and curr: ${currentValue}`);
+//       return accumulator + currentValue
+// }, 0)
+// console.log(totalnum);
+
+
+let marks = [23,45,67,78,40]
+let studentMarks= marks.filter((marks)=>marks>=50)
+console.log(studentMarks);
+let results = marks.map((marks)=>(marks>=50 ? "pass":"fail"))
+console.log(results);
+
+marks = marks.forEach((marks, index)=>{console.log(marks);
+})
+
+let loginpass = "esha123"
+let enterpass = loginpass
+if (enterpass===loginpass) {
+      console.log("valid pass");
+      
+} else {
+      console.log("invalid");
+      
+}
+
+for (let i = 0; i <= 20; i++) {
+      if (i%2===0) {
+            console.log(`Even number ${i}`);
+            continue 
+            
+      } 
+      
+}
+
