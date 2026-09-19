@@ -445,3 +445,26 @@ let celsiusToFahrenheit=(c)=>{
 console.log(celsiusToFahrenheit (0));
 console.log(celsiusToFahrenheit (100));
 
+
+let getGrade=(marks)=>{
+      if (marks>=90) {
+            return "A"
+      }
+      else if (marks>=80) {
+            return "B"
+      }
+      else if (marks>=70) {
+            return "C"
+      }
+      else if (marks>=50) {
+            return "D"
+      }
+      else {
+            return "F"
+      }
+}
+console.log(getGrade(98));
+console.log(getGrade(82));
+console.log(getGrade(74));
+console.log(getGrade(53));
+console.log(getGrade(35));
