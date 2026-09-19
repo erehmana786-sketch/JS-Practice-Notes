@@ -522,3 +522,30 @@ let classAverage = totalSum / students.length
 console.log(totalSum);
 console.log(classAverage);
 
+// Employee management system
+let employees = [
+  { name: "Sara",   dept: "IT",    salary: 80000 },
+  { name: "Ali",    dept: "Sales", salary: 45000 },
+  { name: "Fatima", dept: "IT",    salary: 95000 },
+  { name: "Ahmed",  dept: "HR",    salary: 60000 },
+  { name: "Zara",   dept: "Sales", salary: 55000 },
+  { name: "Usman",  dept: "IT",    salary: 70000 }
+];
+
+let itEmployees = employees.filter (val=>val.dept==="IT")
+console.log("IT Employees: ",itEmployees);
+
+let salary60k = employees.filter (val=>val.salary>=60000)
+console.log("60k+ salary employees",salary60k);
+
+let raiseSalary = employees.map(val=>{
+     let newSalary =  val.salary*1.1
+      return {...employees, salary:newSalary}
+})
+console.log(raiseSalary);
+
+let highestSalary = employees.reduce((acc , curr)=>{
+     return acc.salary > curr.salary ? acc : curr
+},0)
+console.log(`Highest Salary: `, highestSalary );
+
