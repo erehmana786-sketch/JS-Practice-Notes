@@ -438,3 +438,10 @@ for (let i = 1; i <=100; i++) {
       console.log(sum);
       
 }
+
+let celsiusToFahrenheit=(c)=>{
+      return (c * 9/5) + 32
+}
+console.log(celsiusToFahrenheit (0));
+console.log(celsiusToFahrenheit (100));
+
