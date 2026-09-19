@@ -397,7 +397,7 @@ console.log(studentMarks);
 let results = marks.map((marks)=>(marks>=50 ? "pass":"fail"))
 console.log(results);
 
-marks = marks.forEach((marks, index)=>{console.log(marks);
+marks = marks.forEach((marks)=>{console.log(marks);
 })
 
 let loginpass = "esha123"
@@ -510,7 +510,7 @@ console.log(`Grades: `,GetGrade);
 
 let highestMarks = students.reduce((acc, curr)=> {
       return acc.marks > curr.marks ? acc : curr
-},0)
+},students[0])
 console.log("Highest Marks: ", highestMarks);
 
 let totalSum = 0
@@ -521,4 +521,3 @@ students.forEach(val=>{
 let classAverage = totalSum / students.length
 console.log(totalSum);
 console.log(classAverage);
-
