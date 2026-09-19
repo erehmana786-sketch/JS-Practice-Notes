@@ -390,6 +390,7 @@
 // console.log(totalnum);
 
 
+// recap after 3 months
 let marks = [23,45,67,78,40]
 let studentMarks= marks.filter((marks)=>marks>=50)
 console.log(studentMarks);
@@ -418,3 +419,15 @@ for (let i = 0; i <= 20; i++) {
       
 }
 
+for (let i = 1; i <=30; i++) {
+   if ((i%3===0) && (i%5===0)) {
+      console.log("FizzBuzz");
+   } else if (i%5===0) {
+      console.log("Buzz");
+   } else if(i%3===0) {
+      console.log("Fizz");
+      
+   }  else {
+      console.log(i);
+   }     
+}
