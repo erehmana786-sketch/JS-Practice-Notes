@@ -26,7 +26,3 @@ paragraph.innerHTML="<ul><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>"
 
 var title = document.getElementById("title");
 var para  = document.getElementById("para");
-
-// innerText — tags SIRF text hain:
-title.innerText = "Hello <b>World</b>";
-// Browser: Hello <b>World</b>  ← tags dikhenge
