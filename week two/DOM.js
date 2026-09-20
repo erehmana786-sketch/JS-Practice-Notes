@@ -21,3 +21,25 @@ paragraph.innerHTML = "Hey there! <b>Esha here</b>" // Hey there! Esha here (Esh
 
 // create list via innerHTML
 paragraph.innerHTML="<ul><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>"
+
+
+
+var title = document.getElementById("title");
+var para  = document.getElementById("para");
+
+// innerText — tags SIRF text hain:
+title.innerText = "Hello <b>World</b>";
+// Browser: Hello <b>World</b>  ← tags dikhenge
+
+// innerHTML — HTML RENDER hoga:
+title.innerHTML = "Hello <b>World</b>";
+// Browser: Hello World  ← World BOLD!
+
+// innerHTML se list banana:
+para.innerHTML = `
+  <ul>
+    <li>HTML ✓</li>
+    <li>CSS ✓</li>
+    <li>JavaScript ✓</li>
+  </ul>
+`;
