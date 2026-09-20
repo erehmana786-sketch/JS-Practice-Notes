@@ -30,8 +30,3 @@ var para  = document.getElementById("para");
 // innerText — tags SIRF text hain:
 title.innerText = "Hello <b>World</b>";
 // Browser: Hello <b>World</b>  ← tags dikhenge
-
-// innerHTML — HTML RENDER hoga:
-title.innerHTML = "Hello <b>World</b>";
-// Browser: Hello World  ← World BOLD!
-
