@@ -35,11 +35,3 @@ title.innerText = "Hello <b>World</b>";
 title.innerHTML = "Hello <b>World</b>";
 // Browser: Hello World  ← World BOLD!
 
-// innerHTML se list banana:
-para.innerHTML = `
-  <ul>
-    <li>HTML ✓</li>
-    <li>CSS ✓</li>
-    <li>JavaScript ✓</li>
-  </ul>
-`;
