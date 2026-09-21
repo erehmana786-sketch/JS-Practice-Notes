@@ -21,3 +21,18 @@ paragraph.innerHTML = "Hey there! <b>Esha here</b>" // Hey there! Esha here (Esh
 
 // create list via innerHTML
 paragraph.innerHTML="<ul><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>"
+
+// 3. Spread se copy + update
+let updatedProfile = { ...myProfile, age: 21, job: "Developer" };
+console.log(updatedProfile);
+console.log(myProfile.age);  // 20 — original same!
+
+// 4. Calculator object banao
+let calc = {
+  n1: 10, n2: 5,
+  add()      { return this.n1 + this.n2; },
+  subtract() { return this.n1 - this.n2; },
+  multiply() { return this.n1 * this.n2; }
+};
+console.log(calc.add());       // 15
+console.log(calc.multiply());  // 50
