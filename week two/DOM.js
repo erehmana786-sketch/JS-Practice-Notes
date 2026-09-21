@@ -23,8 +23,4 @@ paragraph.innerHTML = "Hey there! <b>Esha here</b>" // Hey there! Esha here (Esh
 paragraph.innerHTML="<ul><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>"
 
  myProfile = {
-  name: "Esha",
-  age: 20,
-  city: "Lahore",
-  skills: ["HTML", "CSS", "JavaScript"]
-};
+  name: "Esha"
