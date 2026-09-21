@@ -32,4 +32,3 @@ et myProfile = {
 // 2. Destructuring se nikalo
 let { name, age, city, skills } = myProfile;
 console.log(name, age, city);
-console.log(skills);
