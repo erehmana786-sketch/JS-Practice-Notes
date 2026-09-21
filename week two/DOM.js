@@ -21,3 +21,15 @@ paragraph.innerHTML = "Hey there! <b>Esha here</b>" // Hey there! Esha here (Esh
 
 // create list via innerHTML
 paragraph.innerHTML="<ul><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>"
+
+et myProfile = {
+  name: "Esha",
+  age: 20,
+  city: "Lahore",
+  skills: ["HTML", "CSS", "JavaScript"]
+};
+
+// 2. Destructuring se nikalo
+let { name, age, city, skills } = myProfile;
+console.log(name, age, city);
+console.log(skills);
