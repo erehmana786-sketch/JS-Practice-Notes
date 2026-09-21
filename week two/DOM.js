@@ -26,5 +26,3 @@ paragraph.innerHTML="<ul><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>"
 let updatedProfile = { ...myProfile, age: 21, job: "Developer" };
 console.log(updatedProfile);
 console.log(myProfile.age);  // 20 — original same!
-
-// 4. Calculator object banao
