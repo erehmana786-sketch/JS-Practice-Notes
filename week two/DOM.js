@@ -21,5 +21,3 @@ paragraph.innerHTML = "Hey there! <b>Esha here</b>" // Hey there! Esha here (Esh
 
 // create list via innerHTML
 paragraph.innerHTML="<ul><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>"
-
-// 3. Spread se copy + update
