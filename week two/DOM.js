@@ -35,4 +35,3 @@ let calc = {
   multiply() { return this.n1 * this.n2; }
 };
 console.log(calc.add());       // 15
-console.log(calc.multiply());  // 50
