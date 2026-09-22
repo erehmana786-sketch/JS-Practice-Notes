@@ -40,4 +40,3 @@ fruits.forEach(function(fruit){
   li.style.padding    = "5px 0";
   ul.appendChild(li);
 });
-document.body.appendChild(ul);
