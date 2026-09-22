@@ -31,5 +31,3 @@ document.body.appendChild(newPara);
 
 // Array se list banana — REACT KA BASE!
 var fruits = ["Apple", "Mango", "Banana", "Orange"];
-
-var ul = document.createElement("ul");
