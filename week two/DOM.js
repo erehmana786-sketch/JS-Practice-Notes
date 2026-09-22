@@ -41,5 +41,3 @@ fruits.forEach(function(fruit){
   ul.appendChild(li);
 });
 document.body.appendChild(ul);
-
-// Yeh yaad rakho:
