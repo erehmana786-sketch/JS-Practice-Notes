@@ -35,5 +35,4 @@ var fruits = ["Apple", "Mango", "Banana", "Orange"];
 var ul = document.createElement("ul");
 fruits.forEach(function(fruit){
   var li = document.createElement("li");
-  li.innerText        = fruit;
 });
