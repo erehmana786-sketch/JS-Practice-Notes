@@ -27,4 +27,3 @@ var newPara = document.createElement("p");
 newPara.innerText    = "JS ne mujhe banaya!";
 newPara.style.color  = "purple";
 newPara.style.fontSize = "18px";
-document.body.appendChild(newPara);
