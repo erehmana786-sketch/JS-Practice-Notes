@@ -44,4 +44,3 @@ document.body.appendChild(ul);
 
 // Yeh yaad rakho:
 // createElement  → element banao
-// innerText      → text daalo
