@@ -37,5 +37,4 @@ fruits.forEach(function(fruit){
   var li = document.createElement("li");
   li.innerText        = fruit;
   li.style.fontSize   = "16px";
-  li.style.padding    = "5px 0";
 });
