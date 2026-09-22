@@ -36,5 +36,4 @@ var ul = document.createElement("ul");
 fruits.forEach(function(fruit){
   var li = document.createElement("li");
   li.innerText        = fruit;
-  li.style.fontSize   = "16px";
 });
