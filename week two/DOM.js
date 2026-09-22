@@ -43,4 +43,3 @@ fruits.forEach(function(fruit){
 document.body.appendChild(ul);
 
 // Yeh yaad rakho:
-// createElement  → element banao
