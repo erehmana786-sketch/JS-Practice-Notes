@@ -5,7 +5,7 @@ let employees = [
   { name: "Fatima", dept: "IT",    salary: 95000 },
   { name: "Ahmed",  dept: "HR",    salary: 60000 },
   { name: "Zara",   dept: "Sales", salary: 55000 },
-  { name: "Fiza",  dept: "IT",    salary: 70000 }
+  { name: "Arman",  dept: "IT",    salary: 70000 }
 ];
 
 let itEmployees = employees.filter (val=>val.dept==="IT")
