@@ -33,6 +33,3 @@ document.body.appendChild(newPara);
 var fruits = ["Apple", "Mango", "Banana", "Orange"];
 
 var ul = document.createElement("ul");
-fruits.forEach(function(fruit){
-
-});
