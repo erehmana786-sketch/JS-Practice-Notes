@@ -1,23 +1,18 @@
-// getElementById is use for only id 
-let title = document.getElementById("title")
-let paragraph = document.getElementById("para")
-title.innerText = "My first DOM"
-paragraph.innerText= "JS change the paragraph text"
-title.style.color= "teal"
-title.style.fontSize= "40px"
-paragraph.style.color= "white"
-paragraph.style.background= "orange"
-paragraph.style.padding= "5px"
+const title = document.getElementById('title')
+const paragraph = document.getElementById('para')
+const button = document.getElementById('btn')
 
-// querySelector use for CSS Selectors (ID, Class, Tag name, etc.)
-var button = document.querySelector("#btn")
-button.style.background="green";
-button.style.color="white";
-button.style.padding="10px 20px";
+title.innerText = "Javascript practice"
+paragraph.innerText= "DOM se text change kiya"
 
-// innerText vs innerHTML 
-paragraph.innerText = "Hey there! <b>Esha here</b>" // Hey there! <b>Esha here</b>
-paragraph.innerHTML = "Hey there! <b>Esha here</b>" // Hey there! Esha here (Esha here bold)
+title.style.color= 'white'
+title.style.backgroundColor= 'blue'
+title.style.fontFamily= 'calibri'
+title.style.fontSize= '40px'
+title.style.padding='20px'
+title.style.borderRadius= '5px'
 
-// create list via innerHTML
-paragraph.innerHTML="<ul><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>"
+paragraph.style.backgroundColor= 'purple'
+paragraph.style.color= 'white'
+paragraph.style.padding = '20px'
+paragraph.style.borderRadius= '5px'
