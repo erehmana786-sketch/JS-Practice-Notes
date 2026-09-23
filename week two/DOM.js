@@ -23,3 +23,9 @@ button.style.padding ='10px 20px'
 button.style.border='none'
 button.style.borderRadius='5px'
 button.style.cursor='pointer'
+
+const heading = document.querySelector('h1')
+const firstPara = document.querySelector("#para")
+console.log(heading.innerText);
+
+paragraph.innerHTML= '<ul><li>HTML</li><li>CSS</li><li>JS</li></ul>'
