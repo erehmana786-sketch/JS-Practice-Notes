@@ -29,3 +29,12 @@ const firstPara = document.querySelector("#para")
 console.log(heading.innerText);
 
 paragraph.innerHTML= '<ul><li>HTML</li><li>CSS</li><li>JS</li></ul>'
+
+const newPara=document.createElement('p')
+newPara.style.color='pink'
+newPara.style.backgroundColor='brown'
+newPara.style.borderRadius='5px'
+newPara.style.padding='5px'
+newPara.style.fontSize='20px'
+newPara.innerText='Esha ne mujhe banaya'
+document.body.appendChild(newPara)
