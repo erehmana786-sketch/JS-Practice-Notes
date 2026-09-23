@@ -36,5 +36,18 @@ newPara.style.backgroundColor='brown'
 newPara.style.borderRadius='5px'
 newPara.style.padding='5px'
 newPara.style.fontSize='20px'
-newPara.innerText='Esha ne mujhe banaya'
+newPara.innerText='Esha ne mujhe banaya, hehehe'
 document.body.appendChild(newPara)
+
+// react concept 
+const vegetables = ["peace" , "patato" , "brinjal" , "cabage"]
+
+const ul = document.createElement('ul')
+vegetables.forEach(veg => {
+    const li = document.createElement('li')
+    li.innerText = veg
+    li.style.fontSize='25px'
+    li.style.padding='5px 0px'
+    ul.appendChild(li)
+});
+document.body.appendChild(ul)
