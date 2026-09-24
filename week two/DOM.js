@@ -51,3 +51,28 @@ vegetables.forEach(veg => {
     ul.appendChild(li)
 });
 document.body.appendChild(ul)
+
+
+// single object card
+
+const student = {
+    name:'Esha',
+    marks: 82,
+    city : 'Lahore',
+    grade : "B+",
+}
+
+const {name, marks, city , grade}= student
+
+const card = document.createElement('div')
+card.style.border= '1px solid black'
+card.style.padding= '20px'
+card.style.margin= '20px 20px'
+card.style.borderRadius= '12px'
+card.style.maxWidth= '300px'
+card.style.fontFamily= 'arial'
+
+card.innerHTML= `<h2> ${name} </h2> <p> Marks: <b>${marks} </b> </p> 
+<p> City: ${city} </p> <p> Marks: <b>${grade} </b> </p>`
+
+document.body.appendChild(card)
