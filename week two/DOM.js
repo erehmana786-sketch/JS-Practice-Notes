@@ -79,22 +79,36 @@ document.body.appendChild(card)
 
 // array of object card
 const students = [
-    {name:'Esha',    marks: 82,   grade: "B+"},
-    {name:'Fiza',    marks: 50,   grade: "C"},
+    {name:'Esha',    marks: 82,   grade: "A"},
+    {name:'Fiza',    marks: 50,   grade: "B"},
     {name:'Arman',    marks: 45,   grade: "D"},
     {name:'Saira',    marks: 35,   grade: "F"},
 ]
 
 students.forEach(student => {
-    const {name, marks , grade} = students
+    const {name, marks , grade} = student
 
     const cards = document.createElement('div')
-    cards.style.border = '2px solide black'
+    cards.style.border = '2px solid black'
     cards.style.borderRadius= '10px'
     cards.style.padding= '20px'
-    cards.style.margin= '20px auto'
-    cards.style.display= 'inlind-block'
+    cards.style.margin= '20px 20px'
+    cards.style.display= 'inline-block'
     cards.style.minWidth='160px'
     cards.style.textAlign='center'
-    cards.style.fontFamily='roboto'
+    cards.style.fontFamily='calibri'
+    
+    if (grade==='A') {
+        cards.style.borderColor = 'green'
+    }
+    else if (grade==='F') {
+        cards.style.borderColor = 'red'
+    } else {
+        cards.style.borderColor = 'orange'
+    }
+
+    cards.innerHTML = `<h3> ${name} </h3> <p> Marks: ${marks} </p> <p> Grade: <b>${grade}</b> </p>`
+
+    document.body.appendChild(cards)
 });
+
