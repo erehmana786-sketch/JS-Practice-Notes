@@ -76,3 +76,5 @@ card.innerHTML= `<h2> ${name} </h2> <p> Marks: <b>${marks} </b> </p>
 <p> City: ${city} </p> <p> Marks: <b>${grade} </b> </p>`
 
 document.body.appendChild(card)
+
+// array of object card
