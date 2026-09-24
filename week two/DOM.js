@@ -78,3 +78,23 @@ card.innerHTML= `<h2> ${name} </h2> <p> Marks: <b>${marks} </b> </p>
 document.body.appendChild(card)
 
 // array of object card
+const students = [
+    {name:'Esha',    marks: 82,   grade: "B+"},
+    {name:'Fiza',    marks: 50,   grade: "C"},
+    {name:'Arman',    marks: 45,   grade: "D"},
+    {name:'Saira',    marks: 35,   grade: "F"},
+]
+
+students.forEach(student => {
+    const {name, marks , grade} = students
+
+    const cards = document.createElement('div')
+    cards.style.border = '2px solide black'
+    cards.style.borderRadius= '10px'
+    cards.style.padding= '20px'
+    cards.style.margin= '20px auto'
+    cards.style.display= 'inlind-block'
+    cards.style.minWidth='160px'
+    cards.style.textAlign='center'
+    cards.style.fontFamily='roboto'
+});
