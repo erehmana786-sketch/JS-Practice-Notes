@@ -111,4 +111,3 @@ students.forEach(student => {
 
     document.body.appendChild(cards)
 });
-
