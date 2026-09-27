@@ -6,14 +6,21 @@
 // altKey, ctrlKey, shiftKey, keyCode
 
 // Event bubbling 
+// const image = document.getElementById('images')
+// image.addEventListener('click', function (e) {
+//     console.log("click inside the ul");
+    
+// },false)
+ 
+// Event capturing
 const image = document.getElementById('images')
 image.addEventListener('click', function (e) {
     console.log("click inside the ul");
     
-}, false)
-// Event capturing
+}, true)
 const owl = document.getElementById('owl')
 owl.addEventListener('click', function (e) {
     console.log("owl clicked");
     
 }, true)
+
