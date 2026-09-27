@@ -13,14 +13,25 @@
 // },false)
  
 // Event capturing (top to bottom)
+// const image = document.getElementById('images')
+// image.addEventListener('click', function (e) {
+//     console.log("click inside the ul");
+    
+// }, true)
+// const owl = document.getElementById('owl')
+// owl.addEventListener('click', function (e) {
+//     console.log("owl clicked");
+    
+// }, true)
+
+// Stop bubbling
 const image = document.getElementById('images')
 image.addEventListener('click', function (e) {
     console.log("click inside the ul");
     
-}, true)
+}, false)
 const owl = document.getElementById('owl')
 owl.addEventListener('click', function (e) {
     console.log("owl clicked");
-    
-}, true)
-
+    e.stopPropagation() // Stop bubbling
+},false)
