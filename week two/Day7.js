@@ -37,13 +37,29 @@
 // },false)
 
 
+// const image = document.getElementById('images')
+// image.addEventListener('click', function (e) {
+//     console.log("click inside the ul");
+    
+// }, false)
+// const google = document.getElementById('google')
+// google.addEventListener('click', function (e) {
+//     e.preventDefault() // don't go to server 
+//     e.stopPropagation() // stop bubbling
+//     console.log("google clicked");
+// },false)
+
+
 const image = document.getElementById('images')
 image.addEventListener('click', function (e) {
-    console.log("click inside the ul");
+    e.preventDefault()
+    console.log(e.target.tagName);
+    if (e.target.tagName=== 'IMG') {
+    console.log(e.target.id); 
+    const removeIt = e.target.parentNode
+    removeIt.remove() 
+}
+
+// removeIt.parentNode.removeChild(removeIt)
     
 }, false)
-const google = document.getElementById('google')
-google.addEventListener('click', function (e) {
-    e.preventDefault() // don't go to the google link 
-    console.log("google clicked");
-},false)
