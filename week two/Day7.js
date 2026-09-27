@@ -5,14 +5,14 @@
 // clientX, clientY, screenX, screenY, 
 // altKey, ctrlKey, shiftKey, keyCode
 
-// Event bubbling 
+// Event bubbling (bottom to top)
 // const image = document.getElementById('images')
 // image.addEventListener('click', function (e) {
 //     console.log("click inside the ul");
     
 // },false)
  
-// Event capturing
+// Event capturing (top to bottom)
 const image = document.getElementById('images')
 image.addEventListener('click', function (e) {
     console.log("click inside the ul");
