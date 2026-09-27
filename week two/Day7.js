@@ -25,13 +25,25 @@
 // }, true)
 
 // Stop bubbling
+// const image = document.getElementById('images')
+// image.addEventListener('click', function (e) {
+//     console.log("click inside the ul");
+    
+// }, false)
+// const owl = document.getElementById('owl')
+// owl.addEventListener('click', function (e) {
+//     console.log("owl clicked");
+//     e.stopPropagation() // Stop bubbling
+// },false)
+
+
 const image = document.getElementById('images')
 image.addEventListener('click', function (e) {
     console.log("click inside the ul");
     
 }, false)
-const owl = document.getElementById('owl')
-owl.addEventListener('click', function (e) {
-    console.log("owl clicked");
-    e.stopPropagation() // Stop bubbling
+const google = document.getElementById('google')
+google.addEventListener('click', function (e) {
+    e.preventDefault() // don't go to the google link 
+    console.log("google clicked");
 },false)
