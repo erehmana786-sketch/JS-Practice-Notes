@@ -64,32 +64,45 @@
     
 // }, false)
 
-// practice 
-console.log("File connect ho gayi!");
-const title = document.getElementById('title')
-const message = document.getElementById('message')
-const button = document.getElementById('btn')
+// // Click event practice 
+// console.log("File connect ho gayi!");
+// const title = document.getElementById('title')
+// const message = document.getElementById('message')
+// const button = document.getElementById('btn')
 
-button.addEventListener('click', ()=>{
-    title.innerText = 'button click hua'
-    title.style.color = 'red'
+// button.addEventListener('click', ()=>{
+//     title.innerText = 'button click hua'
+//     title.style.color = 'red'
     
+// })
+
+// let isRed = false 
+// button.addEventListener('click', ()=>{
+//     if (isRed){
+//         title.style.color = 'blue'
+//         isRed = false
+//     }
+//     else{
+//        title.style.color = 'red'
+//         isRed = true 
+//     }
+// })
+
+// let count = 0 
+// button.addEventListener('click', ()=>{
+//     count++
+//     message.innerText = `clicks: ${count}`
+// })
+
+// Input event 
+const input = document.getElementById('input')
+const message = document.getElementById('message')
+
+input.addEventListener('input', ()=>{
+    message.innerText=`I'm writing: ${input.value}`
 })
 
-let isRed = false 
-button.addEventListener('click', ()=>{
-    if (isRed){
-        title.style.color = 'blue'
-        isRed = false
-    }
-    else{
-       title.style.color = 'red'
-        isRed = true 
-    }
-})
-
-let count = 0 
-button.addEventListener('click', ()=>{
-    count++
-    message.innerText = `clicks: ${count}`
+input.addEventListener('input', ()=>{
+    const len = input.value.length
+    message.innerText = `character: ${len}`
 })
