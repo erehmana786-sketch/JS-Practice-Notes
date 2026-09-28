@@ -64,7 +64,7 @@
     
 // }, false)
 
-// // Click event practice 
+// // Click event practice // BASIC CLICK: 
 // console.log("File connect ho gayi!");
 // const title = document.getElementById('title')
 // const message = document.getElementById('message')
@@ -76,6 +76,7 @@
     
 // })
 
+// TOGGLE 
 // let isRed = false 
 // button.addEventListener('click', ()=>{
 //     if (isRed){
@@ -88,21 +89,39 @@
 //     }
 // })
 
+// COUNTER
 // let count = 0 
 // button.addEventListener('click', ()=>{
 //     count++
 //     message.innerText = `clicks: ${count}`
 // })
 
-// Input event 
-const input = document.getElementById('input')
+// // Input event 
+// const input = document.getElementById('input')
+// const message = document.getElementById('message')
+
+// input.addEventListener('input', ()=>{
+//     message.innerText=`I'm writing: ${input.value}`
+// })
+
+// //  LIVE CHARACTER COUNT
+// input.addEventListener('input', ()=>{
+//     const len = input.value.length
+//     message.innerText = `character: ${len}`
+// })
+
+// INPUT + BUTTON
+const button = document.getElementById('btn')
 const message = document.getElementById('message')
+const input = document.getElementById('input')
 
-input.addEventListener('input', ()=>{
-    message.innerText=`I'm writing: ${input.value}`
-})
-
-input.addEventListener('input', ()=>{
-    const len = input.value.length
-    message.innerText = `character: ${len}`
+button.addEventListener('click', ()=>{
+    if (input.value==='') {
+        message.innerText = 'write something'
+        message.style.color= 'red'
+    } else {
+        message.innerText = `Hello ${input.value}!`
+        message.style.color= 'green'
+        input.value=''
+    }
 })
