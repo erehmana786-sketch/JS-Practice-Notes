@@ -5,14 +5,14 @@
 // clientX, clientY, screenX, screenY, 
 // altKey, ctrlKey, shiftKey, keyCode
 
-// Event bubbling (bottom to top)
+// ********* Event bubbling (bottom to top) ********* 
 // const image = document.getElementById('images')
 // image.addEventListener('click', function (e) {
 //     console.log("click inside the ul");
     
 // },false)
  
-// Event capturing (top to bottom)
+// ********* Event capturing (top to bottom) ********* 
 // const image = document.getElementById('images')
 // image.addEventListener('click', function (e) {
 //     console.log("click inside the ul");
@@ -24,7 +24,7 @@
     
 // }, true)
 
-// Stop bubbling
+// ********* Stop bubbling ********* 
 // const image = document.getElementById('images')
 // image.addEventListener('click', function (e) {
 //     console.log("click inside the ul");
@@ -64,7 +64,7 @@
     
 // }, false)
 
-// // Click event practice // BASIC CLICK: 
+// *********  Click event practice // BASIC CLICK: ********* 
 // console.log("File connect ho gayi!");
 // const title = document.getElementById('title')
 // const message = document.getElementById('message')
@@ -76,7 +76,7 @@
     
 // })
 
-// TOGGLE 
+// ********* TOGGLE  ********* 
 // let isRed = false 
 // button.addEventListener('click', ()=>{
 //     if (isRed){
@@ -89,14 +89,14 @@
 //     }
 // })
 
-// COUNTER
+// ********* COUNTER ********* 
 // let count = 0 
 // button.addEventListener('click', ()=>{
 //     count++
 //     message.innerText = `clicks: ${count}`
 // })
 
-// // Input event 
+// *********  Input event  ********* 
 // const input = document.getElementById('input')
 // const message = document.getElementById('message')
 
@@ -104,13 +104,13 @@
 //     message.innerText=`I'm writing: ${input.value}`
 // })
 
-// //  LIVE CHARACTER COUNT
+// *********  LIVE CHARACTER COUNT ********* 
 // input.addEventListener('input', ()=>{
 //     const len = input.value.length
 //     message.innerText = `character: ${len}`
 // })
 
-// // INPUT + BUTTON
+// *********  INPUT + BUTTON  ********* 
 // const button = document.getElementById('btn')
 // const message = document.getElementById('message')
 // const input = document.getElementById('input')
@@ -126,7 +126,7 @@
 //     }
 // })
 
-// // MouseOver 
+// *********  MouseOver  ********* 
 // const button = document.getElementById('btn')
 // button.addEventListener('mouseover', ()=>{
 //     button.style.color = 'white'
@@ -134,14 +134,14 @@
 //     button.style.transform = 'scale(1.1)'
 // })
 
-// // MouseOut 
+// *********  MouseOut  ********* 
 // button.addEventListener('mouseout', ()=>{
 //     button.style.color = ''
 //     button.style.backgroundColor = ''
 //     button.style.transform = 'scale(1)'
 // })
 
-// // Mouse over on title
+// *********  Mouse over on title ********* 
 // const title = document.getElementById('title')
 // title.addEventListener('mouseover',()=>{
 //     title.style.color = 'purple'
@@ -150,11 +150,28 @@
 //     title.style.color = 'black'
 // })
 
-// key events 
-const message = document.getElementById('message')
+// *********  key events  ********* 
+// const message = document.getElementById('message')
 
-document.addEventListener('keydown', (e)=>{
-   message.innerText = `Press key: ${e.key}`
-   console.log(e.key);
+// document.addEventListener('keydown', (e)=>{
+//    message.innerText = `Press key: ${e.key}`
+//    console.log(e.key);
    
+// })
+
+// ********* Enter key specifically  ********* 
+const input = document.getElementById('input')
+input.addEventListener('keydown', (e)=>{
+    if (e.key==='Enter') {
+       message.innerText = `Press Enter! value: ${input.value}`
+       input.value = ''
+    }
+})
+
+// ********* Esc key ********* 
+input.addEventListener('keydown', (e)=>{
+    if (e.key==='Escape') {
+       input.value = ''
+       message.innerText = `Cleared`
+    }
 })
