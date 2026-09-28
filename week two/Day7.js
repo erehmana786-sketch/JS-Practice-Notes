@@ -110,18 +110,42 @@
 //     message.innerText = `character: ${len}`
 // })
 
-// INPUT + BUTTON
-const button = document.getElementById('btn')
-const message = document.getElementById('message')
-const input = document.getElementById('input')
+// // INPUT + BUTTON
+// const button = document.getElementById('btn')
+// const message = document.getElementById('message')
+// const input = document.getElementById('input')
 
-button.addEventListener('click', ()=>{
-    if (input.value==='') {
-        message.innerText = 'write something'
-        message.style.color= 'red'
-    } else {
-        message.innerText = `Hello ${input.value}!`
-        message.style.color= 'green'
-        input.value=''
-    }
+// button.addEventListener('click', ()=>{
+//     if (input.value==='') {
+//         message.innerText = 'write something'
+//         message.style.color= 'red'
+//     } else {
+//         message.innerText = `Hello ${input.value}!`
+//         message.style.color= 'green'
+//         input.value=''
+//     }
+// })
+
+// MouseOver 
+const button = document.getElementById('btn')
+button.addEventListener('mouseover', ()=>{
+    button.style.color = 'white'
+    button.style.backgroundColor = 'blue'
+    button.style.transform = 'scale(1.1)'
+})
+
+// MouseOut 
+button.addEventListener('mouseout', ()=>{
+    button.style.color = ''
+    button.style.backgroundColor = ''
+    button.style.transform = 'scale(1)'
+})
+
+// Mouse over on title
+const title = document.getElementById('title')
+title.addEventListener('mouseover',()=>{
+    title.style.color = 'purple'
+})
+title.addEventListener('mouseout',()=>{
+    title.style.color = 'black'
 })
