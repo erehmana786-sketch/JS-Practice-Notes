@@ -126,26 +126,35 @@
 //     }
 // })
 
-// MouseOver 
-const button = document.getElementById('btn')
-button.addEventListener('mouseover', ()=>{
-    button.style.color = 'white'
-    button.style.backgroundColor = 'blue'
-    button.style.transform = 'scale(1.1)'
-})
+// // MouseOver 
+// const button = document.getElementById('btn')
+// button.addEventListener('mouseover', ()=>{
+//     button.style.color = 'white'
+//     button.style.backgroundColor = 'blue'
+//     button.style.transform = 'scale(1.1)'
+// })
 
-// MouseOut 
-button.addEventListener('mouseout', ()=>{
-    button.style.color = ''
-    button.style.backgroundColor = ''
-    button.style.transform = 'scale(1)'
-})
+// // MouseOut 
+// button.addEventListener('mouseout', ()=>{
+//     button.style.color = ''
+//     button.style.backgroundColor = ''
+//     button.style.transform = 'scale(1)'
+// })
 
-// Mouse over on title
-const title = document.getElementById('title')
-title.addEventListener('mouseover',()=>{
-    title.style.color = 'purple'
-})
-title.addEventListener('mouseout',()=>{
-    title.style.color = 'black'
+// // Mouse over on title
+// const title = document.getElementById('title')
+// title.addEventListener('mouseover',()=>{
+//     title.style.color = 'purple'
+// })
+// title.addEventListener('mouseout',()=>{
+//     title.style.color = 'black'
+// })
+
+// key events 
+const message = document.getElementById('message')
+
+document.addEventListener('keydown', (e)=>{
+   message.innerText = `Press key: ${e.key}`
+   console.log(e.key);
+   
 })
