@@ -176,3 +176,19 @@
 //     }
 // })
 
+const form = document.getElementById('form')
+const input = document.getElementById('input')
+const button = document.getElementById('submit')
+const result = document.getElementById('result')
+
+form.addEventListener('submit', (e)=>{
+    e.preventDefault()
+    if (input.value==='') {
+        result.innerText='Write your name'
+        result.style.color='red'
+    } else {
+        result.innerText=`Welcome ${input.value}!`
+        result.style.color='green'
+        input.value=''
+    }
+})
