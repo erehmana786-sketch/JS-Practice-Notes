@@ -20,8 +20,12 @@ button.addEventListener('click', ()=>{
       li.style.textDecoration = 'line-through'
       li.style.color='grey'
   })
-ul.appendchild(li)
+ul.appendChild(li)
 todoInput.value=''
 
+})
+
+todoInput.addEventListener('keydown',(e)=>{
+    if (e.key==='Enter') button.click()
 })
 
