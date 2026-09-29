@@ -159,19 +159,20 @@
    
 // })
 
-// ********* Enter key specifically  ********* 
-const input = document.getElementById('input')
-input.addEventListener('keydown', (e)=>{
-    if (e.key==='Enter') {
-       message.innerText = `Press Enter! value: ${input.value}`
-       input.value = ''
-    }
-})
+// // ********* Enter key specifically  ********* 
+// const input = document.getElementById('input')
+// input.addEventListener('keydown', (e)=>{
+//     if (e.key==='Enter') {
+//        message.innerText = `Press Enter! value: ${input.value}`
+//        input.value = ''
+//     }
+// })
 
-// ********* Esc key ********* 
-input.addEventListener('keydown', (e)=>{
-    if (e.key==='Escape') {
-       input.value = ''
-       message.innerText = `Cleared`
-    }
-})
+// // ********* Esc key ********* 
+// input.addEventListener('keydown', (e)=>{
+//     if (e.key==='Escape') {
+//        input.value = ''
+//        message.innerText = `Cleared`
+//     }
+// })
+
