@@ -12,3 +12,6 @@ orangebtn.addEventListener('click', ()=>{
 yellowbtn.addEventListener('click', ()=>{
     document.body.style.backgroundColor= 'lavender'                                           
 })                                                                  
+Reset.addEventListener('click', ()=>{
+    document.body.style.backgroundColor= 'white'                                           
+})                                                                  
