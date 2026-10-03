@@ -193,3 +193,31 @@
 //         input.value=''
 //     }
 // })
+
+const nameInput = document.getElementById('nameInput')
+const greetBtn = document.getElementById('greetBtn')
+const greetMsg = document.getElementById('greetMsg')
+
+greetBtn.addEventListener('click', ()=>{
+    if (nameInput.value === '') {
+        greetMsg.innerText = `write name!`
+        greetMsg.style.color = 'red'
+    } else {
+        greetMsg.innerText = `Hello,${nameInput.value} !`
+        greetMsg.style.color = 'green'
+        nameInput.value = ''
+    }
+})
+
+nameInput.addEventListener('keydown',(e)=>{
+    if (e.key === 'Enter') {
+     if (nameInput.value === '') {
+        greetMsg.innerText = `write name!`
+        greetMsg.style.color = 'red'
+    } else {
+        greetMsg.innerText = `Hello,${nameInput.value} !`
+        greetMsg.style.color = 'green'
+        nameInput.value = ''
+    }
+}
+})
