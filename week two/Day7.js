@@ -208,7 +208,6 @@ greetBtn.addEventListener('click', ()=>{
         nameInput.value = ''
     }
 })
-
 nameInput.addEventListener('keydown',(e)=>{
     if (e.key === 'Enter') {
      if (nameInput.value === '') {
