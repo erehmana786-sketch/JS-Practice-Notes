@@ -4,8 +4,8 @@ const fruits = [
   "Grapes", "Strawberry", "Watermelon", "Pineapple"
 ];
 
-const searchInput = document.getElementById('#searchInput')
-const fruitList = document.getElementById('#fruitList')
+const searchInput = document.getElementById('searchInput')
+const fruitList = document.getElementById('fruitList')
 
 function renderFruits(list) {
     fruitList.innerHTML = ''
@@ -20,10 +20,17 @@ list.forEach(fruit => {
   div.innerText = fruit
   div.style.padding = '6px'
   div.style.margin = '4px 0px'
-  div.style.border = '2px solid gray'
+  div.style.border = '1px solid gray'
   div.style.borderRadius = '5px'
   fruitList.appendChild(div)
 })
-renderFruits(fruits)
 }
+renderFruits(fruits)
 
+searchInput.addEventListener('input',()=>{
+    const searchValue = searchInput.value.toLowerCase()
+    const filtered = fruits.filter(fruit => {
+        return fruit.toLowerCase().includes(searchValue)
+    })
+    renderFruits(filtered)
+})
