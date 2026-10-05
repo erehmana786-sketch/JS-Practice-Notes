@@ -14,3 +14,6 @@ console.log(job);  //null
 // remove item from local storage
 const removecity = localStorage.removeItem('city')
 console.log(localStorage.getItem(city));  //null
+
+
+// hi there i am using VS code 
