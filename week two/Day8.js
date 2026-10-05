@@ -17,3 +17,4 @@ console.log(localStorage.getItem(city));  //null
 
 
 // hi there i am using VS code 
+// Today i am sick and could not work today 
