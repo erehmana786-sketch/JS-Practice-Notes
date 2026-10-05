@@ -14,8 +14,3 @@ console.log(job);  //null
 // remove item from local storage
 const removecity = localStorage.removeItem('city')
 console.log(localStorage.getItem(city));  //null
-
-
-// hi there i am using VS code 
-// Today i am sick and could not work today 
-// Tomorrow in sha allah i'll be back to work and work hard 
