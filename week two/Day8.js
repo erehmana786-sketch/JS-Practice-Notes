@@ -13,7 +13,7 @@ console.log(job);  //null
 
 // remove item from local storage
 const removecity = localStorage.removeItem('city')
-console.log(localStorage.getItem(city));  //null
+console.log(localStorage.getItem("city"));  //null
 
 
 // IMPORTANT: 
@@ -31,5 +31,14 @@ console.log(localStorage.getItem(city));  //null
 
 // right approach
 const user = { name : "Esha", age: 23}
-const userStr = JSON.stringify(user)
-console.log(localStorage.setItem('user', userStr));
+const userStr = JSON.stringify(user) // obj to string
+localStorage.setItem('user', userStr);
+console.log(localStorage.getItem('user', userStr));
+
+
+// convert back to object
+const savedStr = localStorage.getItem('user')
+const saveUser = JSON.parse(savedStr)
+console.log(saveUser.name);
+console.log(saveUser.age);
+
