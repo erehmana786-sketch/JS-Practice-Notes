@@ -21,10 +21,15 @@ console.log(localStorage.getItem(city));  //null
 // JSON.stringify()  → JS to String
 // JSON.parse()      → String to JS
 
-// Save objects 
+// *********** Save objects ***********
 
+// wrong approach
+// const user = { name : "Esha", age: 23}
+// localStorage.setItem('user', user)
+// console.log(localStorage.setItem('user', user)); // (wrong) user [object Object]
+
+
+// right approach
 const user = { name : "Esha", age: 23}
-localStorage.setItem('user', user)
-console.log(localStorage.setItem('user', user)); // (wrong) user [object Object]
-
-
+const userStr = JSON.stringify(user)
+console.log(localStorage.setItem('user', userStr));
