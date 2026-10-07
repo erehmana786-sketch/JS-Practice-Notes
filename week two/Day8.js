@@ -14,3 +14,17 @@ console.log(job);  //null
 // remove item from local storage
 const removecity = localStorage.removeItem('city')
 console.log(localStorage.getItem(city));  //null
+
+
+// IMPORTANT: 
+// To save Array/Object
+// JSON.stringify()  → JS to String
+// JSON.parse()      → String to JS
+
+// Save objects 
+
+const user = { name : "Esha", age: 23}
+localStorage.setItem('user', user)
+console.log(localStorage.setItem('user', user)); // (wrong) user [object Object]
+
+
