@@ -42,3 +42,15 @@ const saveUser = JSON.parse(savedStr)
 console.log(saveUser.name);
 console.log(saveUser.age);
 
+
+// *********** Save Array ***********
+const fruits = ['apple', 'banana', 'mango']
+const toStr = JSON.stringify(fruits)
+
+localStorage.setItem('fruits', toStr)
+const getObj = localStorage.getItem('fruits')
+console.log(getObj);
+
+const toObj = JSON.parse(getObj)
+console.log(toObj);
+
