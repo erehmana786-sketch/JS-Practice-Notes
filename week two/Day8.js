@@ -57,5 +57,6 @@
 // ****** save the name - persists even on page reload ******
 const nameInput = document.getElementById('nameInput')
 const savebtn = document.getElementById('save')
-const delbtn = document.getElementById('delete')
+const clearbtn = document.getElementById('clear')
 const display = document.getElementById('display')
+
