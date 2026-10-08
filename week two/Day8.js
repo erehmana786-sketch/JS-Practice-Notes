@@ -68,7 +68,7 @@ savebtn.addEventListener('click', () => {
         display.style.color = 'red'
         return
     }
-
+    
     localStorage.setItem('username', name)
     display.innerText = `Saved: ${name}`
     display.style.color = 'green '
@@ -76,3 +76,16 @@ savebtn.addEventListener('click', () => {
 })
 
 // While loading page - show saved data
+const savedName = localStorage.getItem('username')
+if (savedName) {
+    display.innerText = `Welcome back: ${savedName}`
+    display.style.color = 'green '
+}
+
+// clear button
+clearbtn.addEventListener('click', () => {
+
+    localStorage.removeItem('username')
+    display.innerText = `Cleared Data`
+    display.style.color = 'orange'
+})
