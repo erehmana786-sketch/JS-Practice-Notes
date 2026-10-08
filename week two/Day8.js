@@ -54,3 +54,4 @@ console.log(getObj);
 const toObj = JSON.parse(getObj)
 console.log(toObj);
 
+// ****** save the name - persists even on page reload ******
