@@ -60,3 +60,19 @@ const savebtn = document.getElementById('save')
 const clearbtn = document.getElementById('clear')
 const display = document.getElementById('display')
 
+// save button
+savebtn.addEventListener('click', () => {
+    const name = nameInput.value
+    if (name === '') {
+        display.innerText = `Write the name!`
+        display.style.color = 'red'
+        return
+    }
+
+    localStorage.setItem('username', name)
+    display.innerText = `Saved: ${name}`
+    display.style.color = 'green '
+    nameInput = ''
+})
+
+// While loading page - show saved data
