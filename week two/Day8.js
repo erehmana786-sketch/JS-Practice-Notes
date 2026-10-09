@@ -89,3 +89,7 @@ clearbtn.addEventListener('click', () => {
     display.innerText = `Cleared Data`
     display.style.color = 'orange'
 })
+
+
+// save Theme preference using event listener - local storage
+
