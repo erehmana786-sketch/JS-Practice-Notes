@@ -54,56 +54,68 @@
 // const toObj = JSON.parse(getObj)
 // console.log(toObj);
 
-// ****** save the name - persists even on page reload ******
-const nameInput = document.getElementById('nameInput')
-const savebtn = document.getElementById('save')
-const clearbtn = document.getElementById('clear')
-const display = document.getElementById('display')
+// // ****** save the name - persists even on page reload ******
+// const nameInput = document.getElementById('nameInput')
+// const savebtn = document.getElementById('save')
+// const clearbtn = document.getElementById('clear')
+// const display = document.getElementById('display')
 
-// save button
-savebtn.addEventListener('click', () => {
-    const name = nameInput.value
-    if (name === '') {
-        display.innerText = `Write the name!`
-        display.style.color = 'red'
-        return
-    }
+// // save button
+// savebtn.addEventListener('click', () => {
+//     const name = nameInput.value
+//     if (name === '') {
+//         display.innerText = `Write the name!`
+//         display.style.color = 'red'
+//         return
+//     }
     
-    localStorage.setItem('username', name)
-    display.innerText = `Saved: ${name}`
-    display.style.color = 'green '
-    nameInput = ''
-})
+//     localStorage.setItem('username', name)
+//     display.innerText = `Saved: ${name}`
+//     display.style.color = 'green '
+//     nameInput = ''
+// })
 
-// While loading page - show saved data
-const savedName = localStorage.getItem('username')
-if (savedName) {
-    display.innerText = `Welcome back: ${savedName}`
-    display.style.color = 'green '
-}
+// // While loading page - show saved data
+// const savedName = localStorage.getItem('username')
+// if (savedName) {
+//     display.innerText = `Welcome back: ${savedName}`
+//     display.style.color = 'green '
+// }
 
-// clear button
-clearbtn.addEventListener('click', () => {
+// // clear button
+// clearbtn.addEventListener('click', () => {
 
-    localStorage.removeItem('username')
-    display.innerText = `Cleared Data`
-    display.style.color = 'orange'
-})
+//     localStorage.removeItem('username')
+//     display.innerText = `Cleared Data`
+//     display.style.color = 'orange'
+// })
 
 
-// Save Theme preference using event listener - local storage
+// *********** Save Theme preference using event listener - local storage
 const lightbtn = document.getElementById("light")
 const darkbtn = document.getElementById("dark")
 const themeMsg = document.getElementById("themeMsg")
 
 const applytheme = (theme)=>{
   if (theme = 'dark') {
-    document.body.style.color = '#1a1a1a'
-    document.body.style.backgroundColor = 'white'
-    themeMsg.innerText = "Dark Mode On!"
-  } else {
     document.body.style.color = 'white'
     document.body.style.backgroundColor = '#1a1a1a'
+    themeMsg.innerText = "Dark Mode On!"
+  } else {
+    document.body.style.color = '#1a1a1a'
+    document.body.style.backgroundColor = 'white'
     themeMsg.innerText = "Light Mode On!"
   }
 }
+
+const savedtheme = localStorage.getItem('theme')
+if (savedtheme) applytheme(savedtheme)
+
+darkbtn.addEventListener('click', ()=>{
+    localStorage.setItem('theme', 'dark')
+    applytheme("dark")
+})
+lightbtn.addEventListener('click', ()=>{
+    localStorage.setItem('theme', 'light')
+    applytheme("light")
+})
