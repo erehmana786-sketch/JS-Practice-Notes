@@ -97,7 +97,7 @@ const darkbtn = document.getElementById("dark")
 const themeMsg = document.getElementById("themeMsg")
 
 const applytheme = (theme)=>{
-  if (theme = 'dark') {
+  if (theme === 'dark') {
     document.body.style.color = 'white'
     document.body.style.backgroundColor = '#1a1a1a'
     themeMsg.innerText = "Dark Mode On!"
@@ -115,6 +115,7 @@ darkbtn.addEventListener('click', ()=>{
     localStorage.setItem('theme', 'dark')
     applytheme("dark")
 })
+
 lightbtn.addEventListener('click', ()=>{
     localStorage.setItem('theme', 'light')
     applytheme("light")
