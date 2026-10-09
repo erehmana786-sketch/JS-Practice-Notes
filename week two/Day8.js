@@ -91,5 +91,19 @@ clearbtn.addEventListener('click', () => {
 })
 
 
-// save Theme preference using event listener - local storage
+// Save Theme preference using event listener - local storage
+const lightbtn = document.getElementById("light")
+const darkbtn = document.getElementById("dark")
+const themeMsg = document.getElementById("themeMsg")
 
+const applytheme = (theme)=>{
+  if (theme = 'dark') {
+    document.body.style.color = '#1a1a1a'
+    document.body.style.backgroundColor = 'white'
+    themeMsg.innerText = "Dark Mode On!"
+  } else {
+    document.body.style.color = 'white'
+    document.body.style.backgroundColor = '#1a1a1a'
+    themeMsg.innerText = "Light Mode On!"
+  }
+}
