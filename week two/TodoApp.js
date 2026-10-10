@@ -3,8 +3,10 @@ const addbtn = document.getElementById('addbtn')
 const clearAllbtn = document.getElementById('clearAllbtn')
 const todoList = document.getElementById('todoList')
 
+// load task from local storage
 const tasks = JSON.parse(localStorage.getItem('tasks')) || []
 
+// Task render function
 const renderTasks = () => {
     todoList.innerHTML = ""
     tasks.forEach((task, index) => {
@@ -26,8 +28,19 @@ const renderTasks = () => {
     li.innerHTML = `<span>${task.text}</span>
   <button onclick="deleteTask(${index})" style="background:red;color:white; border:none; padding:4px 10px; border-radius:4px;cursor:pointer">Delete</button>`
 
+// done toggle on click
   li.addEventListener('click', ()=> toggleTask(index))
 
   todoList.appendChild(li)
     });
 }
+
+// add task 
+addbtn.addEventListener('click', ()=>{
+    if (todoInput.value=== '') return
+
+    tasks.push ({text: todoInput.value , done : false})
+    localStorage.setItem('tasks', JSON.stringify('tasks'))
+    todoInput = ''
+    renderTasks()
+})
