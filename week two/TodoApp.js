@@ -70,3 +70,6 @@ clearAllbtn.addEventListener ('click', ()=>{
     localStorage.removeItem('tasks')
     renderTasks()
 })
+
+// render on page load
+renderTasks()
