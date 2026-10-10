@@ -40,7 +40,7 @@ addbtn.addEventListener('click', ()=>{
     if (todoInput.value=== '') return
 
     tasks.push ({text: todoInput.value , done : false})
-    localStorage.setItem('tasks', JSON.stringify('tasks'))
+    localStorage.setItem('tasks', JSON.stringify(tasks))
     todoInput = ''
     renderTasks()
 })
@@ -50,3 +50,11 @@ todoInput.addEventListener('keydown', (e)=>{
     if (e.key === 'Enter') addbtn.click()
 })
 
+// done toggle
+const toggleTask = (index) =>{
+    tasks[index].done = !tasks[index].done
+    localStorage.setItem('tasks', JSON.stringify(tasks))
+    renderTasks()
+}
+
+// 
