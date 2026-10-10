@@ -63,3 +63,10 @@ const deleteTask = (index) =>{
     localStorage.setItem('tasks', JSON.stringify(tasks))
     renderTasks()
 }
+
+// clearAll 
+clearAllbtn.addEventListener ('click', ()=>{
+    tasks = []
+    localStorage.removeItem('tasks')
+    renderTasks()
+})
