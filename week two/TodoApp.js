@@ -57,4 +57,9 @@ const toggleTask = (index) =>{
     renderTasks()
 }
 
-// 
+// delete 
+const deleteTask = (index) =>{
+    tasks.splice(index, 1)
+    localStorage.setItem('tasks', JSON.stringify(tasks))
+    renderTasks()
+}
