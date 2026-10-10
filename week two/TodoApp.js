@@ -4,7 +4,7 @@ const clearAllbtn = document.getElementById('clearAllbtn')
 const todoList = document.getElementById('todoList')
 
 // load task from local storage
-const tasks = JSON.parse(localStorage.getItem('tasks')) || []
+let tasks = JSON.parse(localStorage.getItem('tasks')) || []
 
 // Task render function
 const renderTasks = () => {
@@ -41,7 +41,7 @@ addbtn.addEventListener('click', ()=>{
 
     tasks.push ({text: todoInput.value , done : false})
     localStorage.setItem('tasks', JSON.stringify(tasks))
-    todoInput = ''
+    todoInput.value = ''
     renderTasks()
 })
 
