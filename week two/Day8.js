@@ -91,32 +91,32 @@
 // })
 
 
-// *********** Save Theme preference using event listener - local storage
-const lightbtn = document.getElementById("light")
-const darkbtn = document.getElementById("dark")
-const themeMsg = document.getElementById("themeMsg")
+// // *********** Save Theme preference using event listener - local storage
+// const lightbtn = document.getElementById("light")
+// const darkbtn = document.getElementById("dark")
+// const themeMsg = document.getElementById("themeMsg")
 
-const applytheme = (theme)=>{
-  if (theme === 'dark') {
-    document.body.style.color = 'white'
-    document.body.style.backgroundColor = '#1a1a1a'
-    themeMsg.innerText = "Dark Mode On!"
-  } else {
-    document.body.style.color = '#1a1a1a'
-    document.body.style.backgroundColor = 'white'
-    themeMsg.innerText = "Light Mode On!"
-  }
-}
+// const applytheme = (theme)=>{
+//   if (theme === 'dark') {
+//     document.body.style.color = 'white'
+//     document.body.style.backgroundColor = '#1a1a1a'
+//     themeMsg.innerText = "Dark Mode On!"
+//   } else {
+//     document.body.style.color = '#1a1a1a'
+//     document.body.style.backgroundColor = 'white'
+//     themeMsg.innerText = "Light Mode On!"
+//   }
+// }
 
-const savedtheme = localStorage.getItem('theme')
-if (savedtheme) applytheme(savedtheme)
+// const savedtheme = localStorage.getItem('theme')
+// if (savedtheme) applytheme(savedtheme)
 
-darkbtn.addEventListener('click', ()=>{
-    localStorage.setItem('theme', 'dark')
-    applytheme("dark")
-})
+// darkbtn.addEventListener('click', ()=>{
+//     localStorage.setItem('theme', 'dark')
+//     applytheme("dark")
+// })
 
-lightbtn.addEventListener('click', ()=>{
-    localStorage.setItem('theme', 'light')
-    applytheme("light")
-})
+// lightbtn.addEventListener('click', ()=>{
+//     localStorage.setItem('theme', 'light')
+//     applytheme("light")
+// })
