@@ -44,3 +44,9 @@ addbtn.addEventListener('click', ()=>{
     todoInput = ''
     renderTasks()
 })
+
+// add by Enter 
+todoInput.addEventListener('keydown', (e)=>{
+    if (e.key === 'Enter') addbtn.click()
+})
+
