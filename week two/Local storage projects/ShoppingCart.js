@@ -32,14 +32,3 @@ localStorage.getItem('cart', JSON.stringify(cart))
 
 }
 
-// render cart
-const cartList = document.getElementById('cartList')
-const totalPrice = document.getElementById('totalPrice')
-const clearCartbtn = document.getElementById('clearCartbtn')
-
-let renderCart = ()=>{
-  cartList.innerHTML = ''
-  if (cart.len) {
-    
-  }
-}
