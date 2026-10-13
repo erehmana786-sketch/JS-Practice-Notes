@@ -32,3 +32,16 @@ localStorage.getItem('cart', JSON.stringify(cart))
 
 }
 
+// render cart
+const cartList = document.getElementById('cartList')
+const totalPrice = document.getElementById('totalPrice')
+const clearCartbtn = document.getElementById('clearCartbtn')
+
+let renderCart = ()=>{
+  cartList.innerHTML = ''
+  if (cart.length === 0) {
+    cartList.innerHTML = `<p>Cart is empty!</p>`
+    totalPrice.innerText = ''
+    return
+  }
+}
