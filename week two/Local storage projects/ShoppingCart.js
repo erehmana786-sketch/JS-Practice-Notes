@@ -24,12 +24,12 @@ products.forEach(product =>{
 })
 
 // cart array + local storage
-const cart = JSON.parse(localStorage.getItem('cart')) || []
+let cart = JSON.parse(localStorage.getItem('cart')) || []
 let addToCart = (productid) =>{
 const product = products.find(p => p.id === productid )
 cart.push(product)
-localStorage.getItem('cart', JSON.stringify(cart))
-
+localStorage.setItem('cart', JSON.stringify(cart))
+renderCart()
 }
 
 // render cart
