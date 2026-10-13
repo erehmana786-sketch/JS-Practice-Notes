@@ -8,6 +8,7 @@ const products = [
 
 const productList = document.getElementById('productList')
 
+// render products
 products.forEach(product =>{
     const div = document.createElement('div')
     div.style.border = '1px solid #ccc'
@@ -17,6 +18,13 @@ products.forEach(product =>{
 
     div.innerHTML = `<b>${product.name}</b>
     <span>-Rs: ${product.price}</span>
-    <button onclick></button>
+    <button onclick="addToCart(${product.id})">Add to Cart</button>
     `
+    productList.appendChild(div)
 })
+
+// render cart
+const cartList = document.getElementById('cartList')
+const totalPrice = document.getElementById('totalPrice')
+const clearCartbtn = document.getElementById('clearCartbtn')
+
