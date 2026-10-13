@@ -44,4 +44,17 @@ let renderCart = ()=>{
     totalPrice.innerText = ''
     return
   }
+
+
+cart.forEach(item =>{
+  const div = document.createElement('div')
+  div.innerText = `${item.name} -Rs. ${item.price} `
+  cartList.appendChild(div)
+})
+
+// total
+let total = 0
+cart.forEach(item => total += item.price)
+totalPrice.innerText = `Total Rs. ${total}`
+
 }
