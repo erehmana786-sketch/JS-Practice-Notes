@@ -58,3 +58,13 @@ cart.forEach(item => total += item.price)
 totalPrice.innerText = `Total Rs. ${total}`
 
 }
+
+// clear cart
+clearCartbtn.addEventListener('click',()=>{
+  cart = []
+  localStorage.removeItem('cart')
+  renderCart()
+})
+
+// render cart on page load
+renderCart()
