@@ -7,4 +7,8 @@ const changeText = function() {
     document.querySelector('#h1').innerHTML = 'I am changing text'
 }
 
-setTimeout(changeText, 2000)
+const changeMe = setTimeout(changeText, 2000)
+
+document.getElementById('stop').addEventListener('click',()=> {
+    clearInterval(changeMe)
+})
