@@ -23,9 +23,3 @@
 // const intervalID = setInterval(sayDate, 2000,"Hi, there!");
 
 // clearInterval(intervalID)
-
-// project color chaning 
-
-const clearID = document.querySelector('#start').addEventListener('click',()=>{
-
-})
