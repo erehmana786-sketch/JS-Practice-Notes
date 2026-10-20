@@ -3,4 +3,8 @@ const sayEsha = function () {
 }
 setTimeout(sayEsha, 1000);
 
-const changeText = document.querySelector('h1').innerText = 'I am changing text'
+const changeText = function() {
+    document.querySelector('#h1').innerHTML = 'I am changing text'
+}
+
+setTimeout(changeText, 2000)
