@@ -1,14 +1,31 @@
-const sayEsha = function () {
-    console.log('Esha');  
-}
-setTimeout(sayEsha, 1000);
+// // ******* set time out *******
 
-const changeText = function() {
-    document.querySelector('#h1').innerHTML = 'I am changing text'
-}
+// const sayEsha = function () {
+//     console.log('Esha');  
+// }
+// setTimeout(sayEsha, 1000);
 
-const changeMe = setTimeout(changeText, 2000)
+// const changeText = function() {
+//     document.querySelector('#h1').innerHTML = 'I am changing text'
+// }
 
-document.getElementById('stop').addEventListener('click',()=> {
-    clearInterval(changeMe)
+// const changeMe = setTimeout(changeText, 2000)
+
+// document.getElementById('stop').addEventListener('click',()=> {
+//     clearTimeout(changeMe)
+// })
+
+// // ******* set interval *******
+// const sayDate = (str) =>{
+//     console.log(str, Date.now());
+// }
+
+// const intervalID = setInterval(sayDate, 2000,"Hi, there!");
+
+// clearInterval(intervalID)
+
+// project color chaning 
+
+const clearID = document.querySelector('#start').addEventListener('click',()=>{
+
 })
